@@ -1,16 +1,59 @@
 .projects {
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;  /* Fondo claro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.projectList {
+    display: flex;
+    flex-wrap: wrap;         /* Permite que los proyectos se acomoden en filas */
+    justify-content: center; /* Centra los elementos */
+    gap: 1rem;               /* Espacio entre los proyectos */
+}
+
+.project {
     background-color: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+    border-radius: 8px;
+    overflow: hidden;       /* Mantiene las esquinas redondeadas para la imagen */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-decoration: none;
+    color: inherit;
+    width: 300px;           /* Ancho fijo para los proyectos */
+    transition: transform 0.3s ease;
 }
 
-.projects ul {
-    list-style: none;
-    padding: 0;
+.project:hover {
+    transform: translateY(-5px); /* Efecto de elevar al pasar el mouse */
 }
 
-.projects li {
-    margin: 0.5rem 0; /* Espacio entre los proyectos */
+.projectImage {
+    width: 100%;            /* La imagen ocupa todo el ancho del contenedor */
+    height: auto;           /* Mantiene la proporción */
+    max-height: 200px;      /* Altura máxima para evitar que sea demasiado grande */
+    object-fit: cover;      /* Ajusta la imagen para que se recorte si es necesario */
+}
+
+.projectInfo {
+    padding: 1rem;
+}
+
+.projectInfo h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.projectInfo p {
+    font-size: 1rem;
+    color: #666;
 }

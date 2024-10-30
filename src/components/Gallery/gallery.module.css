@@ -1,3 +1,61 @@
+.projects {
+    padding: 2rem 1rem;
+    background-color: #f4f4f4; /* Fondo claro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;         /* Aumenta el tamaño del título */
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;        /* Centra el texto del título */
+}
+
+.projectList {
+    display: flex;
+    flex-wrap: wrap;           /* Permite que los proyectos se acomoden en filas */
+    justify-content: center;   /* Centra los elementos */
+    gap: 2rem;                 /* Espacio entre los proyectos */
+}
+
+.project {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;          /* Mantiene las esquinas redondeadas para la imagen */
+    width: calc(30% - 1rem);  /* Asegura que los proyectos ocupen el 30% del ancho */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Efecto de transformación suave al pasar el mouse */
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Eleva el proyecto ligeramente al pasar el mouse */
+}
+
+.project-image {
+    width: 100%;               /* Cambia el ancho al 100% del contenedor */
+    height: auto;              /* Mantiene la proporción de la imagen */
+}
+
+.project-info {
+    padding: 1rem;             /* Espacio alrededor del contenido del proyecto */
+}
+
+.project-info h3 {
+    font-size: 1.5rem;         /* Tamaño de fuente para el título del proyecto */
+    color: #333;
+    margin: 0.5rem 0;          /* Margen para separar el título */
+}
+
+.project-info p {
+    font-size: 1rem;           /* Tamaño de fuente para la descripción */
+    color: #666;               /* Color del texto */
+}
+
+/* Estilos para la galería de imágenes */
 .gallery {
     background-color: white;
     padding: 2rem;
@@ -8,12 +66,18 @@
 
 .imageContainer {
     display: flex;
-    flex-wrap: wrap; /* Permite que las imágenes se ajusten */
+    flex-wrap: wrap;           /* Permite que las imágenes se ajusten */
     justify-content: space-between; /* Espaciado uniforme */
 }
 
 .imageContainer img {
-    width: calc(33% - 10px); /* Tres imágenes por fila con margen */
-    margin-bottom: 10px;
-    border-radius: 5px; /* Bordes redondeados para imágenes */
+    width: calc(30% - 10px);  /* Tres imágenes por fila con margen */
+    height: auto;              /* Mantiene la proporción de la imagen */
+    margin-bottom: 10px;      /* Espacio inferior */
+    border-radius: 5px;       /* Bordes redondeados para imágenes */
+    transition: transform 0.3s ease; /* Efecto de transformación suave al pasar el mouse */
+}
+
+.imageContainer img:hover {
+    transform: scale(1.05);   /* Aumenta la imagen al pasar el mouse */
 }
