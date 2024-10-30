@@ -1,26 +1,42 @@
 .footer {
-    background-color: #333;
-    color: white;
-    padding: 1.5rem;
-    text-align: center;
-    margin-top: 2rem; /* Espacio superior para separar del contenido */
+    background-color: #333;       /* Fondo oscuro */
+    color: white;                 /* Color del texto */
+    padding: 1.5rem;              /* Espacio alrededor del texto */
+    text-align: center;           /* Centra el contenido */
+    width: 100%;                  /* Ocupa todo el ancho */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Sombra superior */
+    font-size: 0.9rem;            /* Tamaño del texto */
+    margin-top: 2rem;             /* Espacio sobre el footer */
+}
+
+.footerText {
+    margin-bottom: 1rem;
+    font-size: 1.2rem; /* Tamaño para el texto de invitación */
 }
 
 .socialLinks {
-    list-style: none;
-    padding: 0;
+    list-style: none;             /* Sin viñetas en la lista */
+    display: flex;                /* Flex para alineación horizontal */
+    justify-content: center;      /* Centra los elementos de la lista */
+    gap: 1rem;                    /* Espacio entre los elementos */
+    padding: 0;                   /* Sin padding */
+    margin: 0;                    /* Sin margen */
 }
 
-.socialLinks li {
-    display: inline;
-    margin: 0 10px; /* Espacio entre los enlaces */
+.socialLinks li a {
+    color: #ffcc00;               /* Color de los enlaces */
+    text-decoration: none;        /* Sin subrayado */
+    font-size: 1rem;
+    transition: color 0.3s ease;  /* Transición suave al cambiar de color */
 }
 
-.socialLinks a {
-    color: white;
-    text-decoration: none;
+.socialLinks li a:hover {
+    color: #ffffff;               /* Cambia a blanco al pasar el mouse */
 }
 
-.socialLinks a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse */
+.signature {
+    font-style: italic;           /* Estilo de cursiva para destacar el texto */
+    margin-top: 1rem;             /* Espacio encima de la firma */
+    font-size: 0.9rem;            /* Tamaño de fuente para la firma */
+    color: #ccc;                  /* Color gris claro para diferenciarlo */
 }
