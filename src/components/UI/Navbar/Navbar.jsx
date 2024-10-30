@@ -1,6 +1,4 @@
-import { ItemNavbar } from "../itemNavbar/itemNavbar"
-
-
+import { ItemNavbar } from "../ItemNavbar/Itemnavbar";
 
 export const Navbar = () => {
     return (
@@ -14,5 +12,4 @@ export const Navbar = () => {
         </nav>
     )
 }
-
 
