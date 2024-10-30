@@ -1,0 +1,36 @@
+.Container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    align-items: center;
+}
+.paito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 1rem;
+    gap: 3rem;
+    
+
+}
+.pito{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.paito > img {
+    border-radius: 1rem;
+}
+
+.article{
+    background-color: burlywood;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}

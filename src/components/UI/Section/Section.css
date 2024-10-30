@@ -1,0 +1,9 @@
+section{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+section > img {
+    border-radius: 50%;
+}
