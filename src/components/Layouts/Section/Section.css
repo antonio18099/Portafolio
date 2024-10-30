@@ -1,8 +1,0 @@
-.Section {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-width: 100vw;
-border-top: 2px solid white;
-}

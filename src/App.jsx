@@ -1,13 +1,23 @@
-import { Home } from './components/Pages/Home/Home'
+// App.jsx
+import Header from './components/Header/Header';
+import AboutMe from './components/AboutMe/AboutMe';
+import Studies from './components/Studies/Studies';
+import Projects from './components/Projects/Projects';
+import Gallery from './components/Gallery/Gallery';
+import Footer from './components/Footer/Footer';
+import './App.css'; // Archivo CSS general
 
-export const App = () => {
+const App = () => {
+    return (
+        <div className="container">
+            <Header />
+            <AboutMe />
+            <Studies />
+            <Projects />
+            <Gallery />
+            <Footer />
+        </div>
+    );
+};
 
-  return (
-
-    <>
-    <Home />
-    </>
-  )
-}
-
-
+export default App;

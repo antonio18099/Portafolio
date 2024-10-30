@@ -1,0 +1,26 @@
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 2rem; /* Espacio superior para separar del contenido */
+}
+
+.socialLinks {
+    list-style: none;
+    padding: 0;
+}
+
+.socialLinks li {
+    display: inline;
+    margin: 0 10px; /* Espacio entre los enlaces */
+}
+
+.socialLinks a {
+    color: white;
+    text-decoration: none;
+}
+
+.socialLinks a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}

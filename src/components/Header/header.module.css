@@ -1,0 +1,23 @@
+.header {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.navList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+}
+
+.navList li {
+    margin: 0 15px; /* Espacio entre elementos */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.navList li:hover {
+    color: #ffcc00; /* Color al pasar el mouse */
+}
