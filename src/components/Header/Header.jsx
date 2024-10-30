@@ -3,7 +3,7 @@ import styles from './header.module.css';
 const Header = () => {
     return (
         <header className={styles.header}>
-            <h1>Antonio Rodríguez</h1>
+            <h1>Antonio Jose Rodriguez Sanchez</h1>
             <nav>
                 <ul className={styles.navList}>
                     <li>Acerca de mí</li>
